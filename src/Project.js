@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
 import Card from "react-bootstrap/Card";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { TextField, Button } from '@mui/material';
 // import { Card } from '@mui/material';
 

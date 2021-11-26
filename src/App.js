@@ -17,7 +17,7 @@ function App() {
         <h1>My Dashboard</h1>       {/*Title of page*/}
       </div>
 
-      <div>
+      <div class="grid">
         {projects}                  {/*List of projects that get displayed*/}
       </div>
 

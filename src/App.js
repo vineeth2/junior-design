@@ -12,21 +12,19 @@ function App() {
   }
 
   return (
-  <>
-    <div className="App">
-      <h1>My Dashboard</h1>
-    </div>
-    <div>
-      {projects.map((project) => (
-        <>
-          <Project/>
-        </>
-      ))}
-    </div>
-    <div>
-      <button onClick={addNewProject}> + </button>
-    </div>
-  </>
+    <>
+      <div className="App">
+        <h1>My Dashboard</h1>       {/*Title of page*/}
+      </div>
+
+      <div>
+        {projects}                  {/*List of projects that get displayed*/}
+      </div>
+
+      <div>
+        <button onClick={addNewProject}> + </button>    {/*Button that adds a new project to the list*/}
+      </div>
+    </>
   );
 }
 

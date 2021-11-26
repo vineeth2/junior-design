@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import Project from "./Project.js"
 import React, { useState, Component } from 'react';
+import Modal from 'react-modal';
 
 function App() {
 
@@ -10,14 +10,18 @@ function App() {
   function addNewProject() {
     setProjects(projects.concat(<Project/>));
   }
+
   return (
   <>
     <div className="App">
       <h1>My Dashboard</h1>
     </div>
-    {projects}
     <div>
-      {projects}
+      {projects.map((project) => (
+        <>
+          <Project/>
+        </>
+      ))}
     </div>
     <div>
       <button onClick={addNewProject}> + </button>

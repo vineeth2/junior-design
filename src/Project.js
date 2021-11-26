@@ -5,6 +5,7 @@ import { TextField, Button } from '@mui/material';
 // import { Card } from '@mui/material';
 
 class Project extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -45,36 +46,41 @@ class Project extends Component {
         </Card>
 
         <Modal isOpen={this.state.modalOpen}>           {/*This modal contains all the project details*/}
+
           <div>
             <h2>Project Name</h2>
             <TextField
               onChange={event => {
                 const { value } = event.target;
-                this.setState({ name : value });
+                this.setState({ name : value });        {/*Textfield for inputting project name*/}
               }}
             />
           </div>
+
           <div>
             <h2>Authors</h2>
             <TextField
               onChange={event => {
                 const { value } = event.target;
-                this.setState({ authors : value });
+                this.setState({ authors : value });     {/*Textfield for inputting authors*/}
               }}
             />
           </div>
+
           <div>
             <h2>Keywords</h2>
             <TextField
               onChange={event => {
                 const { value } = event.target;
-                this.setState({ keywords : value });
+                this.setState({ keywords : value });    {/*Textfield for inputting keywords*/}
               }}
             />
           </div>
+
           <div>
-            <button onClick={this.closeProjectDetails}> Close </button>
+            <button onClick={this.closeProjectDetails}> Close </button>     {/*Close button*/}
           </div>
+
         </Modal>
       </main>
     );

@@ -5,10 +5,10 @@ import Modal from 'react-modal';
 
 function App() {
 
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState([]);     // UseState that adds a project to the list of projects
 
   function addNewProject() {
-    setProjects(projects.concat(<Project/>));
+    setProjects(projects.concat(<Project/>));       // Adds a project to the list of projects
   }
 
   return (

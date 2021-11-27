@@ -48,7 +48,12 @@ class Project extends Component {
 
         <Modal isOpen={this.state.modalOpen}>           {/*This modal contains all the project details*/}
 
-          <div>
+          <div
+          style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center"
+                        }}>
             <h2>Project Name</h2>
             <TextField
               onChange={event => {
@@ -58,7 +63,12 @@ class Project extends Component {
             />
           </div>
 
-          <div>
+          <div
+          style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center"
+                        }}>
             <h2>Authors</h2>
             <TextField
               onChange={event => {
@@ -68,7 +78,12 @@ class Project extends Component {
             />
           </div>
 
-          <div>
+          <div
+          style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}>
             <h2>Keywords</h2>
             <TextField
               onChange={event => {
@@ -78,7 +93,12 @@ class Project extends Component {
             />
           </div>
 
-          <div>
+          <div
+          style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center"
+                        }}>
             <button onClick={this.closeProjectDetails}> Close </button>     {/*Close button*/}
           </div>
 

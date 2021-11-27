@@ -21,8 +21,14 @@ function App() {
         {projects}                  {/*List of projects that get displayed*/}
       </div>
 
-      <div>
-        <button onClick={addNewProject}> + </button>    {/*Button that adds a new project to the list*/}
+      <div
+      style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center"
+              }}
+            >
+        <button onClick={addNewProject} style = {{float: 'center'}}> Add Project </button>    {/*Button that adds a new project to the list*/}
       </div>
     </>
   );

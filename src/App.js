@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <div className="App">
+      <div className="App" style={{marginBottom: '60px'}}>
         <h1>My Dashboard</h1>       {/*Title of page*/}
       </div>
 
@@ -25,7 +25,9 @@ function App() {
       style={{
                 display: "flex",
                 justifyContent: "center",
-                alignItems: "center"
+                alignItems: "center",
+                marginTop: '30px',
+                fontSize: '20px',
               }}
             >
         <button onClick={addNewProject} style = {{float: 'center'}}> Add Project </button>    {/*Button that adds a new project to the list*/}

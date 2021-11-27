@@ -34,15 +34,14 @@ class Project extends Component {
   render() {            // This is what is rendered when a project object is called (See App.js)
     return (
       <main>
-
-        <Card border="primary" style={{ width: '18rem' }}>
+        <Card border="dark" bg='light' style={{ width: '18rem'}}>
           <Card.Body>
             <Card.Title>{this.state.name}</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">{this.state.authors}</Card.Subtitle>   {/* Card that shows the summary of the project.*/}
             <Card.Text>                                                                       {/* Click project details to go to project details */}
               {this.state.keywords}
             </Card.Text>
-            <Button variant="primary" onClick={this.openProjectDetails}>Add Project Details</Button>
+            <Button variant="outline-dark" onClick={this.openProjectDetails}>Add Project Details</Button>
           </Card.Body>
         </Card>
 
@@ -52,9 +51,10 @@ class Project extends Component {
           style={{
                           display: "flex",
                           justifyContent: "center",
-                          alignItems: "center"
+                          alignItems: "center",
+                          marginBottom: "35px"
                         }}>
-            <h2>Project Name</h2>
+            <h2>Project Name:</h2>
             <TextField
               onChange={event => {
                 const { value } = event.target;
@@ -67,9 +67,10 @@ class Project extends Component {
           style={{
                           display: "flex",
                           justifyContent: "center",
-                          alignItems: "center"
+                          alignItems: "center",
+                          marginBottom: "35px"
                         }}>
-            <h2>Authors</h2>
+            <h2>Authors:</h2>
             <TextField
               onChange={event => {
                 const { value } = event.target;
@@ -83,8 +84,9 @@ class Project extends Component {
                           display: "flex",
                           justifyContent: "center",
                           alignItems: "center",
+                          marginBottom: "35px"
                         }}>
-            <h2>Keywords</h2>
+            <h2>Keywords:</h2>
             <TextField
               onChange={event => {
                 const { value } = event.target;
@@ -97,7 +99,8 @@ class Project extends Component {
           style={{
                           display: "flex",
                           justifyContent: "center",
-                          alignItems: "center"
+                          alignItems: "center",
+                          fontSize: "20px"
                         }}>
             <button onClick={this.closeProjectDetails}> Close </button>     {/*Close button*/}
           </div>

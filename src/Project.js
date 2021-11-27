@@ -42,7 +42,7 @@ class Project extends Component {
             <Card.Text>                                                                       {/* Click project details to go to project details */}
               {this.state.keywords}
             </Card.Text>
-            <Button variant="primary" onClick={this.openProjectDetails}>Project Details</Button>
+            <Button variant="primary" onClick={this.openProjectDetails}>Add Project Details</Button>
           </Card.Body>
         </Card>
 
